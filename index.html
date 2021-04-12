@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <video class="video" id="myVideo" loop>
+        <source src="beach.mp4" type="video/mp4">
+    </video>
+
+    <audio class="sound">
+        <source src="beach.mp3" type="audio/mpeg" loop>
+    </audio>
+
+    <div class="flex-wrap">
+
+        <div class="duration-buttons">
+            <button class="js-dur" data-duration="60" type="btn ">1 Minute</button>
+            <button class="js-dur" data-duration="120" type="btn ">2 Minutes</button>
+            <button class="js-dur" data-duration="300" type="btn ">5 Minutes</button>
+        </div>
+        <div class="play">
+            <div class="circle js-big-button">
+                <i class="fas fa-play icon "></i>
+            </div>
+            <span class="timer">01:00</span>
+        </div>
+        <div class="sounds">
+            <div class="rain-icon js-sound" data-picker="rain.mp3-rain.mp4">
+                <i class="fas fa-cloud-showers-heavy"></i>
+            </div>
+            <div class="sun-icon js-sound" data-picker="beach.mp3-beach.mp4">
+                <i class="fas fa-sun"></i>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
