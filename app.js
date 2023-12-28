@@ -70,7 +70,7 @@ const timerFunction = function() {
 
     //in case user paused
     if (durationTotal[1] < 59 && durationTotal[1] > 0) {
-        //convert to number
+        // convert to number
         seconds = 1 * durationTotal[1];
     }
 
